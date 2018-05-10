@@ -1,0 +1,18 @@
+api:
+  version: 1.0.0
+
+server:
+  port: 8088
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://rm-2ze94ns7xf3ho49rjko.mysql.rds.aliyuncs.com:3306/wpdiy?useSSL=false
+    username: wordpress
+    password: wordpress
+  thymeleaf:
+    cache: false
+
+mybatis:
+  mapper-locations: classpath:mapping/**/*Mapper.xml
+  type-aliases-package: wang.sj.obj.entity
